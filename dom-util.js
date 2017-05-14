@@ -1,6 +1,5 @@
 const visitAllNodes = function(node, callback) {
-  // Hint: read about DOM nodes and node methods here: https://developer.mozilla.org/en-US/docs/Web/API/Node
-  
+  // Hint: read about DOM nodes and node methods here: https://developer.mozilla.org/en-US/docs/Web/API/node
   node.childNodes.forEach(smallerNode => visitAllNodes(smallerNode, callback));
   callback(node);
 };
